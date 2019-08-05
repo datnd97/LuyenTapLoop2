@@ -13,9 +13,12 @@
 
     <script>
     let scout ="";
-    for (let i = 0 ; i < 20 ; i++)
+    let dem = 0;
+    let input = parseInt(prompt("Mời bạn nhập số lượng số Fibonacci:"));
+    for (let i = 0 ; dem < input  ; i++)
     {   
         scout += firstFinonaci(i)+" ";
+        dem++;
       
     }
     document.write("Day finonoci la:"+ scout);
