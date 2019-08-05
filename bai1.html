@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Bài 1: In dãy Finonaci -->
+
+
+
+    <script>
+    let scout ="";
+    for (let i = 0 ; i < 20 ; i++)
+    {   
+        scout += firstFinonaci(i)+" ";
+      
+    }
+    document.write("Day finonoci la:"+ scout);
+
+    function firstFinonaci(num)
+    {
+        if(num==0 || num == 1)
+        {
+            return num;
+        }
+        else
+        {
+            return firstFinonaci(num-1)+ firstFinonaci(num - 2);
+        }
+    }
+    
+    
+    </script>
+</body>
+</html>

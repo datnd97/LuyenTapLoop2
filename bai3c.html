@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body  style="font-family: monospace">
+
+
+
+    <script>
+    // // Bài 3: In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau
+    // phần 2: 
+        let sc = ""; 
+        let num = 5;
+        for (let line = 1; line<= num;line++)
+        {
+            for(let star = 1 ; star <= line ;star++)
+            {
+              sc += "*";
+             
+            }
+            sc +="<br>";
+        }  
+        sc +="<br>";
+    
+        for (let i = 0; i <= num; i++) {
+            for (let j = 5; j > i; j--) {
+                sc +="*";
+            }
+            sc +="<br>";
+        }
+    document.write(sc);
+    </script>
+</body>
+</html>

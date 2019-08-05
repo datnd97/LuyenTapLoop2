@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="font-family: monospace">
+    <script>
+
+    let dong = parseInt(prompt("Mời bạn nhập dòng:"));
+    let cot  = parseInt(prompt("Mời bạn nhập cột:"));
+    let scout = "";
+    for(i = 1 ;i <= cot;i++)
+    {
+        for(j = 1 ; j <= dong ;j++)
+        {
+            if(i==1 || j==1 ||  i == cot || j == dong )
+            {
+                scout +="*";
+            }
+            else
+            {
+                scout +="&nbsp;";
+            }
+        }
+        scout +="<br>";
+    }
+    
+    document.write(scout);
+    
+
+
+
+    
+
+
+    
+    
+    </script>
+</body>
+</html>
